@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import { Provider } from 'react-redux';
 import App from './containers/App/App.jsx';
+import store from './redux/configureStore';
 import './index.scss';
 
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <Provider store={store}>
+        <Component />
+      </Provider>
     </AppContainer>,
     document.getElementById('root'),
   )
 }
+
 
 render(App);
 
@@ -22,4 +27,3 @@ if (module.hot) {
   });
 }
 
-ReactDOM.render(<App />, );
