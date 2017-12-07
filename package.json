@@ -1,0 +1,10 @@
+{
+  "name": "mango",
+  "version": "1.0.0",
+  "description": "True react starterkit",
+  "main": "index.js",
+  "repository": "https://github.com/ivanwolf15/mango",
+  "author": "Iván Wolf",
+  "license": "MIT",
+  "private": false
+}
