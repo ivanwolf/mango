@@ -16,6 +16,10 @@ module.exports = {
     path: path.resolve('dist'),
     filename: 'bundle.js'
   },
+  devServer: {
+    port: 3000,
+    overlay: true,
+  },
   devtool: 'inline-source-map',
   module: {
     rules: [
