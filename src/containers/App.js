@@ -1,7 +1,9 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 
-const App = () => (
-  <h1>Hola amigos</h1>
+
+const App = (props: {}) => (
+    <h1>Hola amigos</h1>
 );
 
 export default App;

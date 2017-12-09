@@ -1,11 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FlowtypePlugin = require('flowtype-loader/plugin');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
   filename: 'index.html',
-  // inject: 'body'
-})
+});
+
+const FlowtypeConfig = new FlowtypePlugin();
 
 module.exports = {
   entry: [
@@ -14,7 +16,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve('dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   devServer: {
     port: 3000,
@@ -28,8 +30,11 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
-      }
-    ]
+      },
+    ],
   },
-  plugins: [HtmlWebpackPluginConfig],
-}
+  plugins: [
+    HtmlWebpackPluginConfig,
+    FlowtypeConfig,
+  ],
+};
