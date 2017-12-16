@@ -1,13 +1,17 @@
 # Mango
 
-Mango is a simple react starter kit. It features Webpack, Babel and Flow.
+Mango is a simple react starter kit.
 
-Bulma for the styles and Redux is in the mix also.
+## What is inside
+
+- Webpack, Babel
+- Eslint
+- Redux, thunks, logger and devtools
 
 ## TODO
 
 - [x] Minimal setup
-- [ ] Build script
+- [x] Build script
 - [ ] Test support
 
 ## Motivation
