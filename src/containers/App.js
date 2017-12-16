@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 
 
-const App = (props: {}) => (
+const App = () => (
     <h1>Hola amigos</h1>
 );
 
