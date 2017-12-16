@@ -91,4 +91,7 @@ typings/
 # npm
 package-lock.json
 
+# production
+/dist
+
 # End of https://www.gitignore.io/api/node,macos
