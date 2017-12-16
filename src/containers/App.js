@@ -1,8 +1,9 @@
 import React from 'react';
+import Hello from '../components/HelloWorld';
 
 
 const App = () => (
-    <h1>Hola amigos</h1>
+  <Hello />
 );
 
 export default App;
