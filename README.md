@@ -21,7 +21,7 @@ Mango is a simple react starter kit.
 
 This project was created for learning purposes. I wanted to know whats is happenning behind the scenes in others react starters kits such as [Create React App](https://github.com/facebookincubator/create-react-app). Moreover, I have absolute control on how the project is build. I'm open to suggestions.
 
-## GithubAPP
+## GithubAPPaa
 
 ## License
 
